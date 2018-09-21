@@ -14,7 +14,6 @@ const app = express();
 
 app.use(bodyParser.json());
 
-// TODO - Explain the CORS middleware -> go over my other method when using node/react of proxy and /routes
 app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Credentials', 'true');
