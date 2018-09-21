@@ -26,7 +26,7 @@ exports.getMovies = (req, res) => {
                 if (err) throw err;
 
                 res.send(rows);
-            })
+            });
         }
 
     } else { // No Query, Show all movies
