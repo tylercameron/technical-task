@@ -3,9 +3,9 @@ const port = 5000;
 const bodyParser = require('body-parser');
 const routes = require('./routes/index');
 
-const Movies = require('./models/Movie.js')
+const dbConnection = require('./models/Movie.js')
 
-Movies.connect(function (err) {
+dbConnection.connect(function (err) {
     if (err) throw err;
     console.log("DB Connected!");
 });
